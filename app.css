@@ -338,4 +338,93 @@ aside ul li a:hover {
 }
 
 
+/* ========= AUTH PAGES (Login/Register) ========= */
+
+.auth-body {
+    font-family: 'inter', sans-serif;
+    background: linear-gradient(to bottom right, #0f172a 10%, rgba(0, 200, 255, 0.15) 35%, #020410);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.15);
+    color: white;
+}
+
+.input-group input:focus {
+    background: rgba(255,255,255,0.25);
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #0ea5a4;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.auth-btn:hover {
+    background: #0b8a88;
+}
+
+.auth-switch {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.auth-switch a {
+    color: #0ea5a4;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
 
