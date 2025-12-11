@@ -360,7 +360,7 @@ aside ul li a:hover {
     padding: 40px 30px;
     border-radius: 15px;
     backdrop-filter: blur(12px);
-    color: white;
+    color: black;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
@@ -388,7 +388,7 @@ aside ul li a:hover {
     border: none;
     outline: none;
     background: rgba(255,255,255,0.15);
-    color: white;
+    color: black;
 }
 
 .input-group input:focus {
