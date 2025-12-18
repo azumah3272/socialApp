@@ -1,0 +1,11 @@
+!/config/
+!/controllers/
+!/models/
+!/routes/
+!/views/
+!/public/
+!/middleware/
+!/uploads/
+!/server.js/
+venv/
+node_modules/

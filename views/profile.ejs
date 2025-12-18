@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= user.username %>'s Profile</title>
+</head>
+<body class="profile-body">
+    
+    <div class="profile-container">
+
+        <!-- Cover Photo -->
+        <div class="cover-photo">
+            <img src="<%= user.coverPhoto %>" alt="Cover Photo">
+        </div>
+
+        <!-- Profile Card -->
+        <div class="profile-card">
+
+            <img class="profile-pic" src="<%= user.profilePhoto || '/images/default-avatar.png' %>" alt="Profile Picture">
+
+            <h2><%= user.username %></h2>
+            <p class="bio"><%= user.bio || "No bio yet" %></p>
+
+            <form 
+                action="/profile/update/<%= user._id %>" 
+                method="POST" 
+                enctype="multipart/form-data"
+                class="profile-form"
+            >
+                <input type="text" name="username" placeholder="Update username">
+                <textarea name="bio" placeholder="Update bio"></textarea>
+
+                <label>Profile Picture</label>
+                <input type="file" name="profilePhoto">
+
+                <label>Cover Photo</label>
+                <input type="file" name="coverPhoto">
+
+                <button type="submit">Update Profile</button>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>
